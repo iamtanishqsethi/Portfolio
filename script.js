@@ -1,3 +1,13 @@
+//loading animation
+const loading = document.querySelector('.loading')
+const content = document.querySelector('.content')
+function load(){
+    loading.classList.add("hide");
+    content.classList.remove("hide");
+}
+setTimeout(load,3550);
+
+
 //header scroll
 const header=document.querySelector('header');
 window.addEventListener('scroll', ()=>{

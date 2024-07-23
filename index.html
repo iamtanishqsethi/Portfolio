@@ -3,44 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tanishq Sethi</title>
 </head>
 <body>
-    <header >
-        <a href="index.html" class="logo">
-            TS<span>05</span>
-        </a>
-        <nav>
-            <ul class="nav-items">
-                <li><a href="#about" class="nav-item">About</a></li>
-                <li><a href="#skills" class="nav-item">Skills</a></li>
-                <li><a href="#projects" class="nav-item">Projects</a></li>
-                <li><a href="#contact" class="nav-item">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="hero-text">
-            <h2>
-                Hi, I am
-            </h2>
-            <h1 class="hero-head">
-                <span>Tanishq Sethi</span>
-            </h1>
-            <h2 class="pro">Im a <span class="profession">web developer</span></h2>
+    <div class="loading ">
+        <h1>TS<span>05</span></h1>
+        <div class="progress-bar">
+
         </div>
-        <img src="assets/profile.jpg" alt="profile-img" class="hero-img active">
-    </main>
-    <div class="about" id="about">
-        <h1 class="about-head">
-            About Me....
-        </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium dicta doloremque enim esse, impedit ipsa labore,
-            minus natus nobis qui quidem sapiente ullam veritatis. Dolor
-            molestias necessitatibus omnis repudiandae veniam.</p>
     </div>
-    <footer></footer>
+    <div class="content hide">
+        <header >
+            <a href="index.html" class="logo">
+                TS<span>05</span>
+            </a>
+            <nav>
+                <ul class="nav-items">
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#skills" class="nav-item">Skills</a></li>
+                    <li><a href="#projects" class="nav-item">Projects</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="hero-text">
+                <h2>
+                    Hi, I am
+                </h2>
+                <h1 class="hero-head">
+                    <span>Tanishq Sethi</span>
+                </h1>
+                <h2 class="pro">Im a <span class="profession">web developer</span></h2>
+            </div>
+            <img src="assets/profile.jpg" alt="profile-img" class="hero-img active">
+        </main>
+        <div class="about" id="about">
+            <h1 class="about-head">
+                About Me....
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium dicta doloremque enim esse, impedit ipsa labore,
+                minus natus nobis qui quidem sapiente ullam veritatis. Dolor
+                molestias necessitatibus omnis repudiandae veniam.</p>
+        </div>
+        <div class="contact" id="contact">
+            <h2 class="contact-me">Contact Me</h2>
+
+            <form id="form">
+                <div class="form-element">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Name">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email">
+                </div>
+                <div class="form-element">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Enter your message..."></textarea>
+                </div>
+                <div class="form-element">
+                    <button class="submit" id="submit">Submit Details <i class="fas fa-paper-plane"></i></button>
+                </div>
+
+            </form>
+        </div>
+        <footer class="footer">
+            <h2>Tanishq Sethi</h2>
+            <div class="links">
+                <a href="https://github.com/iamtanishqsethi" class="contact-element"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/TanishqSethi13" class="contact-element"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/tanishq-sethi-229914259/" class="contact-element"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+        </footer>
+    </div>
+
 
 <script src="script.js"></script>
 </body>
