@@ -5,7 +5,7 @@ function load(){
     loading.classList.add("hide");
     content.classList.remove("hide");
 }
-setTimeout(load,3550);
+setTimeout(load,3500);
 
 
 //header scroll
@@ -45,3 +45,22 @@ function rotateShadow(){
     requestAnimationFrame(rotateShadow)//function to request an animation for callback function
 }
 rotateShadow()
+
+//toast notification
+const submitBtn=document.getElementById('submit')
+const toasts=document.getElementById('toasts')
+function createToast(){
+    const notif=document.createElement('div')
+    notif.classList.add('toast')
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    notif.innerText="Message sent successfully.Thank you!"
+    toasts.appendChild(notif)
+    setTimeout(()=>{
+        notif.remove()
+    },4000)
+}
+submitBtn.addEventListener('click',(e)=>{
+    e.preventDefault()
+    //create toast notification
+    createToast()
+})
