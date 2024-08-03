@@ -7,6 +7,26 @@ function load(){
 }
 setTimeout(load,3500);
 
+//scroll effect
+document.addEventListener('DOMContentLoaded',()=>{
+    const fadeElements=document.querySelectorAll('.fade-in')
+    function checkFade(){
+        fadeElements.forEach(el=>{
+            const rect=el.getBoundingClientRect()//gives size of element relative to view port
+            const elTop=rect.top
+            const elBottom=rect.bottom
+
+            const isVisible = elTop < window.innerHeight && elBottom >= 0
+
+            if(isVisible){
+                el.classList.add('visible')
+            }
+        })
+    }
+    window.addEventListener('scroll',checkFade);
+    window.addEventListener('resize',checkFade);
+
+})
 
 //header scroll
 const header=document.querySelector('header');
@@ -50,3 +70,4 @@ const goToContactBtn=document.getElementById('go-to-contact');
 goToContactBtn.addEventListener('click',()=>{
     window.scrollTo({top: document.body.scrollHeight,behavior: 'smooth'});
 })
+
