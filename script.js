@@ -71,3 +71,12 @@ goToContactBtn.addEventListener('click',()=>{
     window.scrollTo({top: document.body.scrollHeight,behavior: 'smooth'});
 })
 
+const openBTn=document.querySelector('.open-nav');
+const mobNav=document.querySelector('.mobile-nav');
+openBTn.addEventListener('click',()=>{
+    mobNav.classList.add('active');
+})
+const closeBTn=document.querySelector('.close-nav');
+closeBTn.addEventListener('click',()=>{
+    mobNav.classList.remove('active');
+})
