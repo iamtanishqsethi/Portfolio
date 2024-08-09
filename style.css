@@ -63,7 +63,7 @@ header{
 }
 header.active{
     background-color: rgba(0, 31, 63, 0.7);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(12px);
     padding: 0.4rem 0;
 }
 .logo{
@@ -121,7 +121,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15% 0;
+    padding: 17% 0;
     color: white;
     animation: fadeIn 1s;
     margin:0 auto ;
@@ -221,8 +221,8 @@ main h2{
     width: 60%;
 }
 .about-content img{
-    height: 25%;
-    width: 25%;
+
+    width: 30%;
     border-radius:5%;
     border: 3px solid #FFD700;
     transform: rotate(8deg);
@@ -236,7 +236,7 @@ main h2{
 
 .projects{
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     padding: 5% 0;
 }
 .project-cont-head{
@@ -382,7 +382,7 @@ a .hello:focus{
     header .open-nav{
         display: block;
         background: transparent;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: #7FDBFF;
         border: none;
         cursor: pointer;
@@ -392,7 +392,7 @@ a .hello:focus{
         outline: none;
     }
     main{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .hero-text{
         text-align: center;
@@ -412,10 +412,10 @@ a .hello:focus{
         height: 100vh;
         width: 100%;
         background-color: rgba(0, 31, 63, 0.7);
-        backdrop-filter: blur(8px);
+        backdrop-filter: blur(12px);
         z-index: 100;
         transform: translateX(-100%);
-        transition: transform 1s ease-in-out;
+        transition: transform 0.4s ease-in-out;
     }
     .mobile-nav.active{
         transform: translateX(0);
@@ -423,7 +423,7 @@ a .hello:focus{
     .close-nav{
         display: block;
         background: transparent;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: #7FDBFF;
         border: none;
         cursor: pointer;
@@ -446,7 +446,16 @@ a .hello:focus{
     }
 
     .about-content{
-        flex-direction: column;
+        flex-direction: column-reverse;
+
+    }
+    .about-content img{
+        width: 50%;
+        margin-top: 1.5rem;
+    }
+    .about-text{
+        line-height: 26px;
+        width: 80%;
     }
 
 }

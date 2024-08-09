@@ -40,18 +40,29 @@ window.addEventListener('scroll', ()=>{
 })
 
 //profession typewriter effect
-const professionText="2nd Year B.tech Student"
-const textArr=["2nd Year B.tech Student","Web Developer"]//need to make it write with multiple text from arr
+
+const textArr=["2nd Year B.tech Student","FrontEnd Developer","Tech Enthusiast"]
 const profession=document.querySelector('.profession');
-let index=1
+let arrIndex=0
+let charIndex=0
+
 writeText()
 function writeText(){
-    profession.innerText=professionText.slice(0,index);
-    index++
-    if(index>professionText.length){
-        index=1
+    const currentText=textArr[arrIndex]
+    profession.innerText=currentText.slice(0,charIndex);
+    charIndex++
+    if(charIndex>currentText.length){
+        charIndex=0
+        arrIndex++
+        if(arrIndex>=textArr.length){
+            arrIndex=0
+        }
+        setTimeout(writeText,200)
+    }else{
+        setTimeout(writeText,200)
     }
-    setTimeout(writeText,200)
+
+
 }
 
 //moving box shadow
