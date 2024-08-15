@@ -57,9 +57,9 @@ function writeText(){
         if(arrIndex>=textArr.length){
             arrIndex=0
         }
-        setTimeout(writeText,200)
+        setTimeout(writeText,250)
     }else{
-        setTimeout(writeText,200)
+        setTimeout(writeText,350)
     }
 
 

@@ -55,7 +55,8 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 18%;
     padding: 0.8rem 0;
     margin-top: 0;
     position: fixed;
@@ -69,9 +70,9 @@ header.active{
 }
 .logo{
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0 auto;
-    padding-right: 15rem;
+    /*padding-right: 15rem;*/
 }
 .logo span{
     color: #FFD700
@@ -98,7 +99,7 @@ nav{
 }
 .nav-item{
     color: #7FDBFF;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     transition: all .1s ease-in-out;
     padding: 0;
     display: inline-block;
@@ -137,10 +138,10 @@ main{
 }
 .hero-head{
     color: #FFD700;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
 }
 main h2{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .pro{
     font-size: 1rem;
@@ -153,8 +154,8 @@ main h2{
     margin: 0 auto;
 }
 .hero-img{
-    height: 22rem;
-    width: 22rem;
+    height: 21rem;
+    width: 21rem;
     border-radius: 50%;
     margin: 0 auto;
     box-shadow: 0 0 50px #FFD700;
@@ -222,7 +223,6 @@ main h2{
     width: 60%;
 }
 .about-content img{
-
     width: 30%;
     border-radius:5%;
     border: 3px solid #FFD700;
@@ -242,6 +242,7 @@ main h2{
 }
 .project-cont-head{
     text-align: center;
+    margin: 3rem 0;
 }
 .projectsContainer{
     display: flex;
@@ -250,22 +251,20 @@ main h2{
     flex-wrap: wrap;
 }
 .project{
-    height: 24rem;
-    width: 20rem;
+    height: 18rem;
+    width: 18rem;
     background-color: rgba(0, 31, 63, 0.7);
-    border-radius: 2rem;
-    padding: 4% 2%;
-    margin: 2%;
+    border-radius: 10px;
+    padding: 3.5% 1.5%;
+    margin:  0.5rem;
     align-items: center;
     justify-content: center;
     text-align: center;
     box-shadow: 0 0 15px #7FDBFF;
 }
 .project-img{
-    height: 60%;
-    width: 80%;
-    object-fit: fill;
-    border: 2px solid #7FDBFF;
+    font-size: 7rem;
+    color: #7FDBFF;
 }
 .projectName{
     font-size: 1.1rem;
@@ -290,7 +289,7 @@ main h2{
     margin: 0 auto;
     width: 85%;
     text-align: center;
-    padding: 5.5rem 4rem;
+    padding: 5.5rem 0;
 }
 .contact h2{
     text-align: center;
@@ -327,9 +326,6 @@ a .hello:hover{
 a .hello:focus{
     outline: none;
 }
-
-
-
 
 .footer{
     background-color: #000;
@@ -396,6 +392,11 @@ a .hello:focus{
     main{
         flex-direction: column-reverse;
     }
+    .hero-img{
+        height: 17rem;
+        width: 17rem;
+        margin: auto;
+    }
     .hero-text{
         text-align: center;
         margin: 50px auto;
@@ -413,7 +414,7 @@ a .hello:focus{
         position: fixed;
         height: 100vh;
         width: 100%;
-        background-color: rgba(0, 31, 63, 0.7);
+        background-color: rgba(0, 31, 63, 0.8);
         backdrop-filter: blur(12px);
         z-index: 100;
         transform: translateX(-100%);
@@ -430,8 +431,8 @@ a .hello:focus{
         border: none;
         cursor: pointer;
         position: fixed;
-        top: 2%;
-        right: 13%;
+        top: 1.2rem;
+        right: 8%;
     }
     .close-nav:focus{
         outline: none;
@@ -448,6 +449,7 @@ a .hello:focus{
     }
     .about{
         width: 70%;
+        padding: 1.5rem 1.2rem;
     }
     .about-content{
         flex-direction: column-reverse;
@@ -459,7 +461,78 @@ a .hello:focus{
     }
     .about-text{
         line-height: 26px;
-        width: 80%;
+        width: 90%;
     }
 
+}
+@media (max-width: 395px) {
+    .progress-bar {
+        width: 50%;
+        height: 5px;
+    }
+    .loading h1{
+        font-size: 1.5rem;
+    }
+    main{
+        padding: 25% 4%;
+    }
+    .hero-img{
+        height: 12rem;
+        width: 12rem;
+
+    }
+    .hero-text{
+        line-height: 35px;
+        font-size: 0.7rem;
+    }
+    .hero-text h2{
+        font-size: 0.75rem;
+    }
+    .hero-text h1{
+        font-size: 1.9rem;
+        margin:0;
+    }
+    .hero-text .get-in-touch{
+        font-size: inherit;
+        padding: 0.7rem;
+    }
+    .about{
+        width: 100%;
+        padding: 2rem 0.9rem;
+        border-radius: 0;
+    }
+    .about-head{
+        font-size: 1.2rem;
+    }
+    .about-content img{
+        width: 60%;
+    }
+    .project{
+        height: 14rem;
+        border-radius: 5px;
+    }
+    .project-cont-head{
+        font-size: 1.8rem;
+    }
+    .project-img{
+        font-size: 2rem;
+    }
+    .contact h2{
+        font-size: 1.35rem;
+    }
+    .contact .contact-text{
+        font-size: 0.65rem;
+        line-height: 1.1rem;
+        padding: 0 1.5rem;
+    }
+
+    a .hello{
+        font-size: 0.8rem;
+    }
+    .footer h2{
+        font-size: 0.8rem;
+    }
+    .footer .links a{
+        font-size: 1rem;
+    }
 }
