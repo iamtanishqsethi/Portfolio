@@ -10,6 +10,7 @@ body{
     color: #FFD700;
     margin: 0 auto;
     letter-spacing: 2px;
+    overflow-x: hidden;
 
 }
 .loading{
@@ -253,7 +254,7 @@ main h2{
     width: 20rem;
     background-color: rgba(0, 31, 63, 0.7);
     border-radius: 2rem;
-    padding: 3% 1%;
+    padding: 4% 2%;
     margin: 2%;
     align-items: center;
     justify-content: center;
@@ -286,40 +287,40 @@ main h2{
 }
 
 .contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
     padding: 5.5rem 4rem;
 }
 .contact h2{
+    text-align: center;
     font-size: 2rem;
 }
 .contact .contact-text{
     font-size: 1.2rem;
     text-align: center;
     line-height: 1.5rem;
-     color: #7FDBFF;
+    color: #7FDBFF;
 }
 .contact a{
     text-decoration: none;
     width: 25%;
 }
 a .hello{
+    align-items: center;
     background-color: #FF4136;
     color: #FFD700;
     font-family: inherit;
     font-size: 1.1rem;
-    padding:7%;
+    padding:2%;
     border-radius: 8px;
     transition: ease-in 0.1s;
-    margin-top: 2rem;
+    margin: 3.5rem 0;
     cursor: pointer;
-    width: 100%;
     line-height: 1.5rem;
 }
 a .hello:hover{
-    transform: translate(-5px,-5px);
+    transform: translate(-4px,-4px);
     border-bottom: 5px solid #FFD700;
     border-right: 5px solid #FFD700;
 }
@@ -333,21 +334,22 @@ a .hello:focus{
 .footer{
     background-color: #000;
     color: dimgray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
     align-items: center;
-    padding: 5% 5%;
+    text-align: center;
+    padding: 4% 0;
     bottom: 0;
 }
 .footer h2{
     font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 .footer .links{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 45%;
+    gap: 1rem;
     font-size: 1.6rem;
 }
 .footer .links a{
@@ -444,7 +446,9 @@ a .hello:focus{
         display: block;
         margin-bottom: 2rem;
     }
-
+    .about{
+        width: 70%;
+    }
     .about-content{
         flex-direction: column-reverse;
 
