@@ -1,11 +1,11 @@
 {
   "name": "Tanishq Sethi",
-  "main-about": [
+  "mainAbout": [
     "2nd Year B.tech Student",
     "FrontEnd Developer",
     "Tech Enthusiast"
   ],
-  "about-me": "Hi, I'm Tanishq Sethi, an 18-year-old web developer currently pursuing a B.Tech degree at Maharaja Agrasen Institute of Technology, New Delhi.\n<br><br>\nI am in my second year of studies and actively enhancing my skills in data structures and algorithms using <span>Java</span>.\nI have a strong foundation in <span>HTML</span>, <span>CSS</span>, and I am currently learning <span>React JS</span>.\nAdditionally, I am proficient in other programming languages such as <span>C</span>, <span>Python</span>, and <span>JavaScript</span>.\n<br><br>\nFeel free to connect with me for any collaboration or opportunities.",
+  "aboutMe": "Hi, I'm Tanishq Sethi, an 18-year-old web developer currently pursuing a B.Tech degree at Maharaja Agrasen Institute of Technology, New Delhi.\n<br><br>\nI am in my second year of studies and actively enhancing my skills in data structures and algorithms using <span>Java</span>.\nI have a strong foundation in <span>HTML</span>, <span>CSS</span>, and I am currently learning <span>React JS</span>.\nAdditionally, I am proficient in other programming languages such as <span>C</span>, <span>Python</span>, and <span>JavaScript</span>.\n<br><br>\nFeel free to connect with me for any collaboration or opportunities.",
   "projects": [
     {
       "name": "GitHub Profiles",
