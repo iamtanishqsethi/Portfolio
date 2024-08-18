@@ -49,6 +49,11 @@ function renderMain(name,mainAbout){
             <img src="assets/profile.jpg" alt="profile-img" class="hero-img active">
     `
     startTextAnimation(mainAbout)
+    const goToContactBtn=document.getElementById('go-to-contact');
+    goToContactBtn.addEventListener('click',()=>{
+        window.scrollTo({top: document.body.scrollHeight,behavior: 'smooth'});
+    })
+
 }
 function startTextAnimation(textArr) {
     // const textArr = ["2nd Year B.Tech Student", "Front-End Developer", "Tech Enthusiast"];
@@ -168,9 +173,5 @@ function rotateShadow(){
 }
 rotateShadow()
 
-const goToContactBtn=document.getElementById('go-to-contact');
-goToContactBtn.addEventListener('click',()=>{
-    window.scrollTo({top: document.body.scrollHeight,behavior: 'smooth'});
-})
 
 
