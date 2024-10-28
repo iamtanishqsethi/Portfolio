@@ -10,27 +10,27 @@
     {
       "name": "GitHub Profiles",
       "description": "Uses GitHub Api to fetch details of a user",
-      "link": "https://github.com/iamtanishqsethi/Web-dev-practice/tree/master/sample-projects/github-profile"
+      "link": "https://github.com/iamtanishqsethi/Github-Profiles"
     },
     {
       "name": "Notes App",
       "description": "Make multiple note pads with the ability to store them locally on browser",
-      "link": "https://github.com/iamtanishqsethi/Web-dev-practice/tree/master/sample-projects/notes-app"
+      "link": "https://github.com/iamtanishqsethi/NotesApp"
     },
     {
       "name": "Insect Catch Game",
       "description": "Small Game to catch as many insects present on th screen",
-      "link": "https://github.com/iamtanishqsethi/Web-dev-practice/tree/master/sample-projects/insect-catch"
+      "link": "https://github.com/iamtanishqsethi/Insect-Catch"
     },
     {
       "name": "Todo lists",
       "description": "Create your own to do lists",
-      "link": "https://github.com/iamtanishqsethi/Web-dev-practice/tree/master/sample-projects/todo-list"
+      "link": "https://github.com/iamtanishqsethi/ToDo-list.git"
     },
     {
-      "name": "Password Generator",
-      "description": "Create random Passwords of variable length ",
-      "link": "https://github.com/iamtanishqsethi/Web-dev-practice/tree/master/sample-projects/password-generator"
+      "name": "Sudoku Solver",
+      "description": "A small java program to solve the entered sudoku puzzel",
+      "link": "https://github.com/iamtanishqsethi/Sudoku-Solver"
     }
 
   ]
